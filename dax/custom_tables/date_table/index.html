@@ -1,0 +1,858 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://reports.simstech.dev/dax/custom_tables/date_table/">
+      
+      <link rel="icon" href="../../../assests/images/favicon.svg">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
+    
+    
+      
+        <title>Dates Table - SimsTech.Dev</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.c382b1dc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#date-table" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="SimsTech.Dev" class="md-header__button md-logo" aria-label="SimsTech.Dev" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart" viewBox="0 0 16 16">
+  <path d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5v12h-2V2h2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z"/>
+</svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SimsTech.Dev
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Dates Table
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://bitbucket.org/jsimshighlands/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M22.2 32A16 16 0 0 0 6 47.8a26.35 26.35 0 0 0 .2 2.8l67.9 412.1a21.77 21.77 0 0 0 21.3 18.2h325.7a16 16 0 0 0 16-13.4L505 50.7a16 16 0 0 0-13.2-18.3 24.58 24.58 0 0 0-2.8-.2L22.2 32zm285.9 297.8h-104l-28.1-147h157.3l-25.2 147z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Bitbucket
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="SimsTech.Dev" class="md-nav__button md-logo" aria-label="SimsTech.Dev" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart" viewBox="0 0 16 16">
+  <path d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5v12h-2V2h2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z"/>
+</svg>
+
+    </a>
+    SimsTech.Dev
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://bitbucket.org/jsimshighlands/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M22.2 32A16 16 0 0 0 6 47.8a26.35 26.35 0 0 0 .2 2.8l67.9 412.1a21.77 21.77 0 0 0 21.3 18.2h325.7a16 16 0 0 0 16-13.4L505 50.7a16 16 0 0 0-13.2-18.3 24.58 24.58 0 0 0-2.8-.2L22.2 32zm285.9 297.8h-104l-28.1-147h157.3l-25.2 147z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Bitbucket
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          DAX
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="DAX" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          DAX
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1">
+          Calculated Tables
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Calculated Tables" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Calculated Tables
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Dates Table
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Dates Table
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-and-why" class="md-nav__link">
+    What and Why
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-date-table" class="md-nav__link">
+    Creating a Date Table
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-custom-columns" class="md-nav__link">
+    Additional Custom Columns
+  </a>
+  
+    <nav class="md-nav" aria-label="Additional Custom Columns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-create-a-custom-column" class="md-nav__link">
+    How to create a Custom Column
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-columns" class="md-nav__link">
+    Custom Columns
+  </a>
+  
+    <nav class="md-nav" aria-label="Custom Columns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#after-today" class="md-nav__link">
+    After Today
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#before-today" class="md-nav__link">
+    Before Today
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#current-week" class="md-nav__link">
+    Current Week
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-or-before-current-year" class="md-nav__link">
+    In or Before Current Year
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-or-after-current-month" class="md-nav__link">
+    In or After Current Month
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-or-before-current-month" class="md-nav__link">
+    In or Before Current Month
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-weekday" class="md-nav__link">
+    Is Weekday
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../holiday_table/" class="md-nav__link">
+        Holiday Table
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Reports
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Reports" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Reports
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../report_templates/projection_report/" class="md-nav__link">
+        Projection Report
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../report_templates/funding_report/" class="md-nav__link">
+        Funding Report
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../report_templates/scorecard_report/" class="md-nav__link">
+        Scorecard Reports
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-and-why" class="md-nav__link">
+    What and Why
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-date-table" class="md-nav__link">
+    Creating a Date Table
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-custom-columns" class="md-nav__link">
+    Additional Custom Columns
+  </a>
+  
+    <nav class="md-nav" aria-label="Additional Custom Columns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-create-a-custom-column" class="md-nav__link">
+    How to create a Custom Column
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-columns" class="md-nav__link">
+    Custom Columns
+  </a>
+  
+    <nav class="md-nav" aria-label="Custom Columns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#after-today" class="md-nav__link">
+    After Today
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#before-today" class="md-nav__link">
+    Before Today
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#current-week" class="md-nav__link">
+    Current Week
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-or-before-current-year" class="md-nav__link">
+    In or Before Current Year
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-or-after-current-month" class="md-nav__link">
+    In or After Current Month
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-or-before-current-month" class="md-nav__link">
+    In or Before Current Month
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-weekday" class="md-nav__link">
+    Is Weekday
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="date-table">Date Table</h1>
+<h2 id="what-and-why">What and Why</h2>
+<p>A date table is a table that has continous dates for full years, example being 1/1/2017 to 12/31/2022. Althoguh your data may have dates in it, it is likely that those dates have gaps in them for weekends or holidays, an independent date table allows for DAX time intelligence functions to work properly and create accurate results.</p>
+<h2 id="creating-a-date-table">Creating a Date Table</h2>
+<p>One of the easiest ways to create a date table, if you don't have one already built out, is to create a table inside of Power BI using DAX. To do this, in Power BI Desktop click on the Modeling Tab and select New table:</p>
+<p><img alt="new_table" src="../../../assests/images/date_table/new_table.png" /></p>
+<p>This will open up the table formula bar:</p>
+<p><img alt="table_formula_bar" src="../../../assests/images/date_table/table_formula_bar.png" /></p>
+<p>You can either create your own date table using DAX or use the code below as a started for your table. This code will create a table full of dates between the start and end dates. It will also format that date in different ways that can be used in different measures:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Dates</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>
+<span class="w">    </span><span class="c1">//Make sure to start as January 1st of a year</span><span class="w"></span>
+<span class="w">    </span><span class="nx">VAR</span><span class="w"> </span><span class="nx">_startDate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">DATE</span><span class="p">(</span><span class="mf">2013</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="c1">//Make sure to end on December 31st of a year</span><span class="w"></span>
+<span class="w">    </span><span class="nx">VAR</span><span class="w"> </span><span class="nx">_endDate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">DATE</span><span class="p">(</span><span class="mf">2022</span><span class="p">,</span><span class="w"> </span><span class="mf">12</span><span class="p">,</span><span class="w"> </span><span class="mf">31</span><span class="p">)</span><span class="w"></span>
+<span class="nx">RETURN</span><span class="w"></span>
+<span class="w">    </span><span class="nx">ADDCOLUMNS</span><span class="p">(</span><span class="w"></span>
+<span class="w">        </span><span class="nx">CALENDAR</span><span class="p">(</span><span class="nx">_startDate</span><span class="p">,</span><span class="nx">_endDate</span><span class="p">),</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;DateAsInteger&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">FORMAT</span><span class="p">([</span><span class="nb">Date</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;YYYYMMDD&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;YEAR&quot;</span><span class="p">,</span><span class="nx">YEAR</span><span class="p">([</span><span class="nb">Date</span><span class="p">]),</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;MonthNumber&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">FORMAT</span><span class="p">([</span><span class="nb">Date</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;MM&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;YearMonthNumber&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">FORMAT</span><span class="p">([</span><span class="nb">Date</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;YYYY/MM&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;YearMonthShort&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">FORMAT</span><span class="p">([</span><span class="nb">Date</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;YYYY/mmm&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;MonthNameShort&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">FORMAT</span><span class="p">([</span><span class="nb">Date</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;mmm&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;MonthNameLong&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">FORMAT</span><span class="p">([</span><span class="nb">Date</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;mmmm&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;DayOfWeekNumber&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">WEEKDAY</span><span class="p">([</span><span class="nb">Date</span><span class="p">]),</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;DayOfWeek&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">FORMAT</span><span class="p">([</span><span class="nb">Date</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;dddd&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;DayOfWeekShort&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">FORMAT</span><span class="p">([</span><span class="nb">Date</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;ddd&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;WeekNum&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">WEEKNUM</span><span class="p">([</span><span class="nb">Date</span><span class="p">]),</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;WeekNumYear&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">WEEKNUM</span><span class="p">([</span><span class="nb">Date</span><span class="p">])</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="s2">&quot;-&quot;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="nx">FORMAT</span><span class="p">([</span><span class="nb">Date</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;YYYY&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;Quarter&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Q&quot;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="nx">FORMAT</span><span class="p">([</span><span class="nb">Date</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;Q&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;YearQuarter&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">FORMAT</span><span class="p">([</span><span class="nb">Date</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;YYYY&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="s2">&quot;/Q&quot;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="nx">FORMAT</span><span class="p">([</span><span class="nb">Date</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;Q&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>The final step to setting up a date table is setting the table as the default Date Table so that Power BI uses it for DAX time intellegence measures. To do this locate the Dates table created in the steps above in the Fields list on the right hand side of Power BI desktop. Right click on the table created and select the "Mark as date table" option:</p>
+<p><img alt="mark_as_date_table" src="../../../assests/images/date_table/mark_as_date_table.png" /></p>
+<p>This will pop up the Mark as date table prompt. From the Date column drop down select the Date column from the table an click OK:</p>
+<p><img alt="select_date_column" src="../../../assests/images/date_table/select_date_column.png" /></p>
+<p>That's it, you have not setup a date table and told Power BI to use for time intellegence measures for DAX.</p>
+<h2 id="additional-custom-columns">Additional Custom Columns</h2>
+<p>It may be handy to expand your date table out to provide additional filtering or functionality, the below are some additional custom columns I have found useful to add to this table over the years, please feel free to add any as needed in your project.</p>
+<h3 id="how-to-create-a-custom-column">How to create a Custom Column</h3>
+<p>To create a custom column in a table first select the table you wish to add the custom column to. Next in the Modeling tab at the top of Powe BI select New column:</p>
+<p><img alt="custom_column" src="../../../assests/images/custom_column.png" /></p>
+<p>This will open up the column formula bar, in which you can type in your DAX to create a new custom column:</p>
+<p><img alt="custom_column_formula" src="../../../assests/images/custom_column_formula.png" /></p>
+<p>Please feel free to use any of the custom columns below as needed in your project.</p>
+<h3 id="custom-columns">Custom Columns</h3>
+<h4 id="after-today">After Today</h4>
+<p>This custom column can be used when you want to filter a visual or slicer down to only show dates that are after today. A modification that can be made to this is instead of just the greater then symbol (&gt;), you could replace it with the greater than or equal to symbols (&gt;=) to include todays date in the column:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">After</span><span class="w"> </span><span class="nx">Today</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">IF</span><span class="p">(</span><span class="nx">Dates</span><span class="p">[</span><span class="nb">Date</span><span class="p">]</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nx">TODAY</span><span class="p">(),</span><span class="w"> </span><span class="nx">TRUE</span><span class="p">(),</span><span class="w"> </span><span class="nx">FALSE</span><span class="p">())</span><span class="w"></span>
+</code></pre></div>
+<h4 id="before-today">Before Today</h4>
+<p>Similar to the <a href="#after-today">After Today</a> this custom colum can be used when you want to filter a visual or slicer down to only show dates before today. A modification that can be made to this is instead of just the lesser then symbol (&lt;), you could replace it with the lesser than or equal to symbols (&lt;=) to include todays date in the column:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Before</span><span class="w"> </span><span class="nx">Today</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">IF</span><span class="p">(</span><span class="nx">Dates</span><span class="p">[</span><span class="nb">Date</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">TODAY</span><span class="p">(),</span><span class="w"> </span><span class="nx">TRUE</span><span class="p">(),</span><span class="w"> </span><span class="nx">FALSE</span><span class="p">())</span><span class="w"></span>
+</code></pre></div>
+<h4 id="current-week">Current Week</h4>
+<p>This custom field can be used when you need to either know you are in the current week for a measure or when you need to restrict a measure down to a the current week:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Current</span><span class="w"> </span><span class="nx">Week</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">_thisWeekNum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">WEEKNUM</span><span class="p">(</span><span class="nx">TODAY</span><span class="p">())</span><span class="w"></span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">_thisYear</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">YEAR</span><span class="p">(</span><span class="nx">TODAY</span><span class="p">())</span><span class="w"></span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">_currentWeekNumYear</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">_thisWeekNum</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="s2">&quot;-&quot;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="nx">_thisYear</span><span class="w"></span>
+<span class="nx">RETURN</span><span class="w"></span>
+<span class="w">    </span><span class="nx">IF</span><span class="p">(</span><span class="nx">_currentWeekNumYear</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Dates</span><span class="p">[</span><span class="nx">WeekNumYear</span><span class="p">],</span><span class="w"> </span><span class="nx">TRUE</span><span class="p">(),</span><span class="w"> </span><span class="nx">FALSE</span><span class="p">())</span><span class="w"></span>
+</code></pre></div>
+<h4 id="in-or-before-current-year">In or Before Current Year</h4>
+<p>This custom field can be used when you want to filter a visual or slicer down to only show a date range for this year and the years before in the date table:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">In</span><span class="w"> </span><span class="nx">or</span><span class="w"> </span><span class="nx">Before</span><span class="w"> </span><span class="nx">Current</span><span class="w"> </span><span class="nx">Year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">IF</span><span class="p">(</span><span class="nx">Dates</span><span class="p">[</span><span class="nx">YEAR</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="nx">YEAR</span><span class="p">(</span><span class="nx">TODAY</span><span class="p">()),</span><span class="w"> </span><span class="nx">TRUE</span><span class="p">(),</span><span class="w"> </span><span class="nx">FALSE</span><span class="p">())</span><span class="w"></span>
+</code></pre></div>
+<h4 id="in-or-after-current-month">In or After Current Month</h4>
+<p>This custom field can be used when you want to filter a visual or slicer to only show a date range for this month and after in the date table:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">In</span><span class="w"> </span><span class="nx">or</span><span class="w"> </span><span class="nx">After</span><span class="w"> </span><span class="nx">Current</span><span class="w"> </span><span class="nx">Month</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">IF</span><span class="p">(</span><span class="nx">Dates</span><span class="p">[</span><span class="nx">YearMonthNumber</span><span class="p">]</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="nx">FORMAT</span><span class="p">(</span><span class="nx">TODAY</span><span class="p">(),</span><span class="w"> </span><span class="s2">&quot;YYYY/MM&quot;</span><span class="p">),</span><span class="w"> </span><span class="nx">TRUE</span><span class="p">(),</span><span class="w"> </span><span class="nx">FALSE</span><span class="p">())</span><span class="w"></span>
+</code></pre></div>
+<h4 id="in-or-before-current-month">In or Before Current Month</h4>
+<p>Similar to the <a href="#in-or-after-current-month">In or After Current Month</a>, this custom field can be used when you wan tto filter a visual or slicer to only show a date range for this month or before in the date table:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">In</span><span class="w"> </span><span class="nx">or</span><span class="w"> </span><span class="nx">Before</span><span class="w"> </span><span class="nx">Current</span><span class="w"> </span><span class="nx">Month</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">IF</span><span class="p">(</span><span class="nx">FORMAT</span><span class="p">([</span><span class="nb">Date</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;YYYY/MM&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="nx">FORMAT</span><span class="p">(</span><span class="nx">TODAY</span><span class="p">(),</span><span class="w"> </span><span class="s2">&quot;YYYY/MM&quot;</span><span class="p">),</span><span class="w"> </span><span class="nx">TRUE</span><span class="p">(),</span><span class="w"> </span><span class="nx">FALSE</span><span class="p">())</span><span class="w"></span>
+</code></pre></div>
+<h4 id="is-weekday">Is Weekday</h4>
+<p>This function is helpful when you are needing to count number of weekdays between two dates. This column is used more in other DAX measures than as a stand alone filter:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Is</span><span class="w"> </span><span class="nx">Weekday</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>
+<span class="w">    </span><span class="nx">SWITCH</span><span class="p">(</span><span class="w"></span>
+<span class="w">        </span><span class="nx">WEEKDAY</span><span class="p">([</span><span class="nb">Date</span><span class="p">]),</span><span class="w"></span>
+<span class="w">            </span><span class="mf">1</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="mf">7</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="mf">1</span><span class="w"></span>
+<span class="w">        </span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Home
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../holiday_table/" class="md-footer__link md-footer__link--next" aria-label="Next: Holiday Table" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Holiday Table
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.a6c66575.min.js"></script>
+      
+    
+  </body>
+</html>
