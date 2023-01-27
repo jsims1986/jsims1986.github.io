@@ -2,52 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://reports.simstech.dev/</loc>
-         <lastmod>2022-11-17</lastmod>
+         <lastmod>2023-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://reports.simstech.dev/about/</loc>
-         <lastmod>2022-11-17</lastmod>
+         <lastmod>2023-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://reports.simstech.dev/datasources/simple_report_export/</loc>
-         <lastmod>2022-11-17</lastmod>
+         <lastmod>2023-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://reports.simstech.dev/datasources/users/</loc>
-         <lastmod>2022-11-17</lastmod>
+         <lastmod>2023-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://reports.simstech.dev/dax/custom_tables/date_table/</loc>
-         <lastmod>2022-11-17</lastmod>
+         <lastmod>2023-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://reports.simstech.dev/dax/custom_tables/holiday_table/</loc>
-         <lastmod>2022-11-17</lastmod>
+         <lastmod>2023-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://reports.simstech.dev/report_templates/funding_report/</loc>
-         <lastmod>2022-11-17</lastmod>
+         <lastmod>2023-01-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://reports.simstech.dev/report_templates/pipeline_report/</loc>
+         <lastmod>2023-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://reports.simstech.dev/report_templates/projection_report/</loc>
-         <lastmod>2022-11-17</lastmod>
+         <lastmod>2023-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://reports.simstech.dev/report_templates/pullthrough_report/</loc>
-         <lastmod>2022-11-17</lastmod>
+         <lastmod>2023-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://reports.simstech.dev/report_templates/scorecard_report/</loc>
-         <lastmod>2022-11-17</lastmod>
+         <lastmod>2023-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
