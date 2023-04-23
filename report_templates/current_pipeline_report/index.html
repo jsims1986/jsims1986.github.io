@@ -572,6 +572,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#today-and-power-bi-servcie" class="md-nav__link">
+    Today and Power BI Servcie
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -806,6 +813,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#today-and-power-bi-servcie" class="md-nav__link">
+    Today and Power BI Servcie
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -975,6 +989,8 @@
 <h2 id="customization-options">Customization Options</h2>
 <h3 id="refine-today-measures">Refine Today Measures</h3>
 <p>Currently all the measures that deal with the Today range all work off of just the day as today. This may cause some issues with the last year measures as there will be sometimes where today last year fell on a weekend. To get around this you could change the Today to be same business day last year. This way you are comparing no so much the acutal day but the day of business instead.</p>
+<h3 id="today-and-power-bi-servcie">Today and Power BI Servcie</h3>
+<p>Due to how the Power BI Service calculates the Today() DAX expression a custom measure found in the Measures Table\Utility Measures folder called _correctdToday has been setup. This measure allows you to adjust the measures that display a value based on today, to match your timezone. Why this is used instead of just the Today() DAX is because of the Power BI service, when using the default is Today() it uses the local system settings of your maching running Power BI desktop to know when Today() is. If you were to publish this report the Power BI Service Today() now uses UTC time which can cause an issue where where you end up tomorrow hour before its actually tomorrow. To resolve thsi adjust #/24 part of the _correctdToday to match your current timezone which then allows both Power BI Desktop and the Power BI Service to display Today as expected.</p>
 <h2 id="download">Download</h2>
 <p><a href="../../assests/templates/template_current_pipeline.pbit">Download Template</a></p>
 <h2 id="report-demo">Report Demo</h2>
