@@ -454,9 +454,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#using-the-template" class="md-nav__link">
-    Using the template
+  <a href="#using-a-template" class="md-nav__link">
+    Using a template
   </a>
+  
+    <nav class="md-nav" aria-label="Using a template">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-a-excel-dataset" class="md-nav__link">
+    Using a Excel dataset
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-a-microsoft-sql-dataset" class="md-nav__link">
+    Using a Microsoft SQL dataset
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -744,9 +764,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#using-the-template" class="md-nav__link">
-    Using the template
+  <a href="#using-a-template" class="md-nav__link">
+    Using a template
   </a>
+  
+    <nav class="md-nav" aria-label="Using a template">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-a-excel-dataset" class="md-nav__link">
+    Using a Excel dataset
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-a-microsoft-sql-dataset" class="md-nav__link">
+    Using a Microsoft SQL dataset
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -860,7 +900,7 @@
 <li><a href="#report-demo">Report Demo</a></li>
 </ul>
 <h2 id="dataset">Dataset</h2>
-<p>Before opening the template please make sure to build out the Excel worksheet used as the Dataset for this template. Make sure that the fields are named exactly as they are listed below in the Field Name column and the sheet name in Excel is named <strong><em>Data</em></strong>.</p>
+<p>Before opening the template please make sure to build out the Excel worksheet or a Microsoft SQL (MSSQL) Custom View to be used as the dataset depending what template you are using. Make sure that the fields are named exactly as they are listed below in the Field Name column. If using Excel as your dataset then make sure that the sheet that has the data being used is named <strong><em>Data</em></strong>.</p>
 <h3 id="field-information">Field Information</h3>
 <p>All these fields must be part of the dataset, if one of the fields listed is not something that is currently in your LOS then it is alright to use the same data point for the column. Example, if you don't have a field for your Branch name, then it would be ok to reuse the same field this is used for ORGID as the Branch data.</p>
 <table>
@@ -966,10 +1006,24 @@
 <p class="admonition-title">Note</p>
 <p>This dataset  uses many of the same filed as the other templates. It is possible to point the other templates at the same dataset to minimize the number of reports that need to be exported out of the LOS.</p>
 </div>
-<h2 id="using-the-template">Using the template</h2>
+<h2 id="using-a-template">Using a template</h2>
+<h3 id="using-a-excel-dataset">Using a Excel dataset</h3>
 <p>Once you have your Excel file ready to go with the correct column headers and sheet name open the template_scorecards.pbit and you will be prompted for the file path to your Excel file. This file path must be the exact full path to the file. Example is if I have my Excel file saved to my desktop as LOS_Data.xlsx then the path I would type in is C:\Users\Jody\Desktop\LOS_Data.xlsx</p>
 <p><img alt="file_path" src="../../assests/images/file_path_scorecards.png" /></p>
 <p>Once the file path is typed in click load, your data will be imported and the report will open. From here you can customize the report by swapping out fields in visuals or possible changing measures or custom fields to better suit your companies work flow.</p>
+<h3 id="using-a-microsoft-sql-dataset">Using a Microsoft SQL dataset</h3>
+<p>Once you have your MSSQL custom view built out with the correct column names, open the template_scorecards_sql.pbit and you will be prompted for 3 pieces of information:</p>
+<ol>
+<li>SQL_Server: This will be the IP address or name of the SQL server that houses the database with your LOS data.</li>
+<li>SQL_DB: This is the name the database that holds the custom view we will be using for the template.</li>
+<li>Custom_View: This is the name of the custom view that contains the data needed for the template.</li>
+</ol>
+<p><img alt="template_scorecards_sql_params" src="../../assests/images/template_scorecards_sql_params.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you need to add a port number to the end of your SQL server address, simply add a colon to the end of your server IP or name followed by the port number, example would be: MY-SQL-SERVER:1234, where :1234 is the port number.</p>
+</div>
+<p>Once this information is loaded, you may be prompted for a user name and password for the SQL server, please work with your SQL server administrator to get the correct credentials. Once everything is connected up the report will open allowing you to customize the report to your companies needs.</p>
 <h2 id="report-pages">Report Pages</h2>
 <p>Pages on this report are intended to provide insight into branch and users performance. Pagens in this report are intended to provided break downs based on loan milestone dates, along with providing a comparison of company averages.</p>
 <h3 id="branch-scorecard">Branch Scorecard</h3>
@@ -1008,7 +1062,10 @@
 <p>Most the time when updating a columns name in Power BI, visuals and filters that use that column will automatically update. If for some reason it doesn't simple remove the old column from the Filters pane and replace with your new column.</p>
 </div>
 <h2 id="download">Download</h2>
-<p><a href="../../assests/templates/template_scorecards.pbit">Download Template</a></p>
+<ul>
+<li><a href="../../assests/templates/template_scorecards.pbit">Download Template - Excel Data Source</a></li>
+<li><a href="../../assests/templates/template_scorecards_sql.pbit">Download Template - MSSQL Data Source</a></li>
+</ul>
 <h2 id="report-demo">Report Demo</h2>
 <div style="overflow: hidden; margin: 15px auto;">
     <iframe title="Funding Report" width="100%" height="300" src="https://app.powerbi.com/view?r=eyJrIjoiZmE5OTQ4MTUtYThhZS00NDMyLWE4MmItY2JlOWM1MTZlY2Q1IiwidCI6IjA5YWRjNzRkLTJjZGItNDcwZC04MmVkLThiMTAzMWM4ZGZhNyJ9" frameborder="0" allowFullScreen="true"></iframe>
