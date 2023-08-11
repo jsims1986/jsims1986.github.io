@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://reports.simstech.dev/datasources/users/">
+        <link rel="canonical" href="https://reports.simstech.dev/modeling/rls/">
       
       <link rel="icon" href="../../assests/images/favicon.svg">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>Users - SimsTech.Dev</title>
+        <title>Row-Level Security - SimsTech.Dev</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#user-data-source" class="md-skip">
+        <a href="#row-level-security" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Users
+              Row-Level Security
             
           </span>
         </div>
@@ -460,14 +460,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       
       
@@ -490,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../field_list/" class="md-nav__link">
+      <a href="../../datasources/field_list/" class="md-nav__link">
         Fields List
       </a>
     </li>
@@ -502,93 +500,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Users
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../datasources/users/" class="md-nav__link">
         Users
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#reason" class="md-nav__link">
-    Reason
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#users-table" class="md-nav__link">
-    Users Table
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resolutions" class="md-nav__link">
-    Resolutions
-  </a>
-  
-    <nav class="md-nav" aria-label="Resolutions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#relationships" class="md-nav__link">
-    Relationships
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lookup-column" class="md-nav__link">
-    Lookup Column
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    Conclusion
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -600,7 +516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../simple_report_export/" class="md-nav__link">
+      <a href="../../datasources/simple_report_export/" class="md-nav__link">
         Simple Report Export
       </a>
     </li>
@@ -620,12 +536,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -646,11 +564,148 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../modeling/rls/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Row-Level Security
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Row-Level Security
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-row-level-security-rls" class="md-nav__link">
+    What is Row-Level Security (RLS)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important-concepts" class="md-nav__link">
+    Important Concepts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-rls" class="md-nav__link">
+    Setting Up RLS
+  </a>
+  
+    <nav class="md-nav" aria-label="Setting Up RLS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#identifying-users" class="md-nav__link">
+    Identifying Users
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identifying-data" class="md-nav__link">
+    Identifying Data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-rls-role" class="md-nav__link">
+    Setting Up RLS Role
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-many-to-many-relationship" class="md-nav__link">
+    Setting up Many-To-Many relationship
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-rls-using-a-bridge-table" class="md-nav__link">
+    Setting up RLS using a Bridge table
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assigning-users-power-bi-web-service" class="md-nav__link">
+    Assigning users - Power BI Web Service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    Troubleshooting
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#power-bi-desktop" class="md-nav__link">
+    Power BI Desktop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#power-bi-web-service" class="md-nav__link">
+    Power BI Web Service
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-users" class="md-nav__link">
+    Other Users
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -704,37 +759,58 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#reason" class="md-nav__link">
-    Reason
+  <a href="#what-is-row-level-security-rls" class="md-nav__link">
+    What is Row-Level Security (RLS)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#users-table" class="md-nav__link">
-    Users Table
+  <a href="#important-concepts" class="md-nav__link">
+    Important Concepts
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#resolutions" class="md-nav__link">
-    Resolutions
+  <a href="#setting-up-rls" class="md-nav__link">
+    Setting Up RLS
   </a>
   
-    <nav class="md-nav" aria-label="Resolutions">
+    <nav class="md-nav" aria-label="Setting Up RLS">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#relationships" class="md-nav__link">
-    Relationships
+  <a href="#identifying-users" class="md-nav__link">
+    Identifying Users
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#lookup-column" class="md-nav__link">
-    Lookup Column
+  <a href="#identifying-data" class="md-nav__link">
+    Identifying Data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-rls-role" class="md-nav__link">
+    Setting Up RLS Role
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-many-to-many-relationship" class="md-nav__link">
+    Setting up Many-To-Many relationship
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-rls-using-a-bridge-table" class="md-nav__link">
+    Setting up RLS using a Bridge table
   </a>
   
 </li>
@@ -745,8 +821,42 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    Conclusion
+  <a href="#assigning-users-power-bi-web-service" class="md-nav__link">
+    Assigning users - Power BI Web Service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    Troubleshooting
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#power-bi-desktop" class="md-nav__link">
+    Power BI Desktop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#power-bi-web-service" class="md-nav__link">
+    Power BI Web Service
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-users" class="md-nav__link">
+    Other Users
   </a>
   
 </li>
@@ -765,36 +875,90 @@
                 
 
 
-<h1 id="user-data-source">User Data Source</h1>
-<h2 id="reason">Reason</h2>
-<p>As your data grows or you start to pull in more data spanning more time you may run into a problem as shown in the screenshot below, where you have a user that has changed their name. What happens in Power BI is that because these are unique data points, it reflects that way in the visual creating, in this case, both a Jane A Doe and a Jane Doe bar in the graph:</p>
-<p><img alt="multiple_user_name_graph" src="../../assests/images/data_source_users/multiple_user_name_graph.png" /></p>
-<p>What this can cause is a skew when a users looks at the report, thinking that Jane only worked on 17 funded loans where in reality she actually worked on 29. Worse would be if users start questioning if the data is reliable. Luckily there are a couple of ways that this can be resolved.</p>
-<h2 id="users-table">Users Table</h2>
-<p>Before we can get into the actually ways to resolve this we are going to need to gather some data to help resolve the problem. What we are needing is a users table. This table will usually have one or multiple unique identification column, this could be a username or employee id, really anything that is unique to the user themselves. The table will also have the full name or the display name of the user. The goal of this is to have a table of data with users names we would like to display in a report that have a data point that is unique to that user. A good example of this would be getting a table of loan officers names with their corresponding NMLS number. Since the NMLS number is unique to an loan office, we now have a way to identify a user in a dataset based on that instead of using the loan officers name from the loan origination system (LOS) data.</p>
-<h2 id="resolutions">Resolutions</h2>
-<p>The resolutions listed below are only a couple of ways that this can resolved. In an ideal world you would have your user table available with your LOS data and could create a dataset where the names are already set from the data source server. In most cases I have not found this possible, which is why I have had to use the resolutions below for different datasets.</p>
-<h3 id="relationships">Relationships</h3>
-<p>Once we have gotten our users with unique ids setup in a users table, we are ready to start working on solving for the same user showing up multiple times in our visuals. The easiest way to accomplish this, especially when you are only dealing with on set of users, is using relationships in Power BI. Relationships allows us to use the unique id for the user found in both the LOS data and on our users table to use the full name from the users table in visuals with data from our LOS. To setup you a relationship, once you have your LOS data and User table loaded, head over to the Model tab in Power BI desktop:</p>
-<p><img alt="model_tab" src="../../assests/images/data_source_users/model_tab.png" /></p>
-<p>Once that is open you will presented with a list your data sources, in this example I have a simple set of LOS data and a user table I created. Notice in both tables I have a UserID column. In the LOS_Data this column contains the unique id for the user that worked on a loan. In the User_Table the UserID column contains the unique ID mapped to the FullName of the user, so that I can use this name in my report visuals. To create the relationship simple drag the UserID from the users table to the UserID in th LOS data, Power Bi will do the rest and create the 1 to many relationship:</p>
-<p><img alt="create_relationship" src="../../assests/images/data_source_users/create_relationship.gif" /></p>
-<p>Once create we can use the FullName field from the Users_Table when we need to display user names in a visual and it will be used instead of what is in the LOS data. Using the earlier example with Jane we are now able to create a bar graph that has all Jane's funded loan showing as her instead of being split between the two names that are in the LOS data:</p>
-<p><img alt="multiple_users_fixed_data" src="../../assests/images/data_source_users/multiple_user_fixed_graph.png" /></p>
-<h3 id="lookup-column">Lookup Column</h3>
-<p>In some case you either have multiple users you need to replace in a visual (such as a matrix or table visual), or you have multiple visual on a page that has multiple user roles on it (such as the Funding Report's operations page). In this case using one user table will not work as you cannot have multiple relationships between the same tables. While you could have multiple user tables this could end up being a maintenance and resource nightmare. A simpler solution would be just to use the <a href="https://learn.microsoft.com/en-us/dax/lookupvalue-function-dax">LOOKUPVALUE</a> DAX function to return the value from your users table. To do this we would create a custom column (click here if you need help creating a custom column) and then add the following code into the formula bar:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">User_Lookup</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>
-<span class="w">    </span><span class="c1">//Create a variable to store the looked up user, setting to blank if nothing is found</span><span class="w"></span>
-<span class="w">    </span><span class="nx">VAR</span><span class="w"> </span><span class="nx">_userLookup</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">LOOKUPVALUE</span><span class="p">(</span><span class="nx">Users_Table</span><span class="p">[</span><span class="nx">FullName</span><span class="p">],</span><span class="w"> </span><span class="nx">Users_Table</span><span class="p">[</span><span class="nx">UserID</span><span class="p">],</span><span class="w"> </span><span class="nx">LOS_Data</span><span class="p">[</span><span class="nx">UserID</span><span class="p">],</span><span class="w"> </span><span class="nx">BLANK</span><span class="p">())</span><span class="w"></span>
-<span class="c1">//If the user lookup is blank set this column to the LOS user name, else use the looked up full name</span><span class="w"></span>
-<span class="nx">RETURN</span><span class="w"></span>
-<span class="w">    </span><span class="nx">IF</span><span class="p">(</span><span class="nx">ISBLANK</span><span class="p">(</span><span class="nx">_userLookup</span><span class="p">),</span><span class="w"> </span><span class="nx">LOS_Data</span><span class="p">[</span><span class="nx">User</span><span class="p">],</span><span class="w"> </span><span class="nx">_userLookup</span><span class="p">)</span><span class="w"></span>
+<h1 id="row-level-security">Row-Level Security</h1>
+<h2 id="what-is-row-level-security-rls">What is Row-Level Security (RLS)</h2>
+<p>Row-Level Security (RLS) is a way to control access to data in a database at a row granularity. This allows users to only have access to the data that they should be authorized to see.</p>
+<p>For loan origination data, RLS helps us ensure that users only have access to the same loans they would have access to the loan origination system. An example of this is to provide managers with access to specific cost centers in reports so that they only can see loan information for their region, area, or branch only. In the example below we will walk through the steps of create a role for the manager to cost center scenario. Although we are only working through the one scenario, it could be expand on to make reports that are filtered down to originators or production team level.</p>
+<h2 id="important-concepts">Important Concepts</h2>
+<p>Before we dig into the how to setup and use RLS its important to understand some concepts when looking at adding it to your system:</p>
+<ol>
+<li>How data is refreshed in your system.</li>
+<li>If you are using DirectQuery as your data source there are a few more things that you will need to consider verses importing your data. There are few Microsoft knowledge base articles that cover this, one being the main <a href="https://learn.microsoft.com/en-us/power-bi/enterprise/service-admin-rls">RLS</a> by Microsoft. All templates from this site use import and can have RLS added to if needed.</li>
+<li>Multiple Datasets or Reports.<ul>
+<li>Depending on how you wish to have your data setup and users accessing that data you may end up with multiple datasets or reports that display the same information but one with RLS and another that does not. Example of this happening is if you have an executive team that needs to see all loan data in the system vs a group of managers that only need to see the subset of cost centers they manage.</li>
+</ul>
+</li>
+<li>How will data be access.<ul>
+<li>Users can access data via the Power BI Desktop or the Power BI Service. We will be using the <em>USERPRINCIPALNAME()</em> DAX function to identify a user and apply the correct role for them. If the user is connecting via the Power BI Web Service then you may need to consider what level of access that users has to the workspace that the data/report is stored in, please see this <a href="https://learn.microsoft.com/en-us/power-bi/enterprise/service-admin-rls#using-rls-with-workspaces-in-power-bi">Microsoft KBA</a> on using RLS with workspaces.</li>
+</ul>
+</li>
+</ol>
+<h2 id="setting-up-rls">Setting Up RLS</h2>
+<p>For the below examples we are going to reference the following tables:</p>
+<p><strong>LOS Data Table</strong></p>
+<p><img alt="los_data_table" src="../../assests/images/rls/los_data_table.png" /></p>
+<p><strong>Manager Table</strong></p>
+<p><img alt="manager_table" src="../../assests/images/rls/managers_table.png" /></p>
+<h3 id="identifying-users">Identifying Users</h3>
+<p>To enable us to know what data a user should have access to via RLS we need to identify the user that is accessing the report. Luckily Power BI's DAX has a built in function that helps us with this, the <em>USERPRINCIPALNAME()</em> function will return a users information in the <em>user@example.com</em> format. We can then use that to build a access list or apply it to a set of a data to restrict users based on their User Principal Name, you can see this in our Managers data in the EMAIL column.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please note that there is also a <em>USERNAME()</em> DAX function that will return the User Principal Name when published to the Power BI Service, but when used in the Power BI Desktop version the <em>USERNAME()</em> returns the user information in the <em>DOMAIN\User</em> format where as the <em>USERPRINCIPALNAME()</em> will also return the <em>user@example.com</em> format making a little more consistent between versions.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can create a report with a blank dataset that has a set of measures, one set to <em>USERNAME()</em> and the other set to <em>USERPRINCIPALNAME()</em>. Pulling these measures out into a card visual can help see what identity you are working with and act as a troubleshooting source later when you publish the report to the Power BI Web Service.</p>
+</div>
+<h3 id="identifying-data">Identifying Data</h3>
+<p>When applying RLS we will need to setup a filter to ensure that the user only has access to data that they are suppose to. This means the data has to have some way to group or individual identify what data a user should see. Using the <em>USERPRINCIPALNAME()</em> we would need a email address that is tied to the user for each row they would be given access to. Keep in mind that the email must match what is returned by the <em>USERPRINCIPALNAME()</em> function. In the examples below we will be using cost center to create a group that users should have access to and then use Power BI's relationships to apply the security role. In the above data set we will be building relationships off the ORGID column.</p>
+<h3 id="setting-up-rls-role">Setting Up RLS Role</h3>
+<p>To setup a Role that will be used for RLS first click the Manage roles button on the Model ribbon. The Model ribbon can be found while in the Report View or on the Home ribbon while in the Data or Model view. The button looks like this:</p>
+<p><img alt="manage_roles_button" src="../../assests/images/rls/manage_roles_button.png" /></p>
+<p>Click the Mange roles button will open the Manage roles box:</p>
+<p><img alt="manage_roles" src="../../assests/images/rls/manage_roles.png" /></p>
+<p>From here the <strong><em>Create</em></strong>  button is used to create a role and then write a DAX expression that is applied to the table we want to apply RLS to. Below is a Role called Manager, that is applied to the Managers table with the a DAX statement that compares the EMAIL column in the Managers table to the <em>USERPRINCIPALNAME()</em> to know which roles should be accessible to the user..</p>
+<p><img alt="manage_roles_setup" src="../../assests/images/rls/manage_roles_setup.png" /></p>
+<p>Clicking the <strong><em>Save</em></strong> button will save the role. Now when a user that is assigned to this role uses the dataset, the Managers table will apply RLS and only give access to those rows where the User Principal Name equals the email found in the EMAIL column.</p>
+<p>We now need to apply the same RLS not only to the Managers table but have it also flow over to the LOS Data table. Next we look at two different way to accomplish this.</p>
+<h3 id="setting-up-many-to-many-relationship">Setting up Many-To-Many relationship</h3>
+<p>To create a Many-To-Many relationship go to the Model view in Power BI Desktop and drag the key column from one table to the table you wish to create the relationship with. In our example we will be creating a relationship on the ORGID columns. When we do this we will get a <strong><em>Create relationship</em></strong> pop-up confirming that we want to use the ORGID columns.</p>
+<p><img alt="many-to-many" src="../../assests/images/rls/many_to_many_relationship.png" /></p>
+<p>There are a couple of things to note on this popup:</p>
+<ol>
+<li>Warning about the Many-To-Many cardinality being used, make sure to take a peek at the <a href="https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-many-to-many-relationships">learn more</a> link provided and understand what this could mean for you environment. If Many-To-Many does not work check out the next example using a bridge table instead.</li>
+<li>Under the Cross filter direction, we want to make sure to check the <em>Apply security filter in both dicrection</em> checkbox so that the Role applied to the Managers table will filter to the LOS Data table through the relationship.</li>
+</ol>
+<p>Once you click <strong><em>OK</em></strong> the model view will be updated like below showing the relationship line between the two tables:</p>
+<p><img alt="many_to_many_relationship" src="../../assests/images/rls/many_to_many_model.png" /></p>
+<p>With this in place when a user accesses the dataset, the Manager role filters the Managers table down to the cost centers they have access to and that in turn (because of the Apply security filter checkbox) flows down to the LOS Data, making sure that the user only sees loan data for the cost centers they have been allowed to.</p>
+<h3 id="setting-up-rls-using-a-bridge-table">Setting up RLS using a Bridge table</h3>
+<p>An alternative to using a Many-To-Many relationship, is to build a bridge table that contains the unique values of your key fields and then connecting the tables through this new table. In our example we would create a bridge table that contains the ORGID only, using the following DAX statement:</p>
+<div class="highlight"><pre><span></span><code><span class="n">ORGID</span><span class="w"> </span><span class="n">Only</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">CALCULATETABLE</span><span class="p">(</span><span class="n">DISTINCT</span><span class="p">(</span><span class="err">&#39;</span><span class="n">LOS</span><span class="w"> </span><span class="n">Data</span><span class="err">&#39;</span><span class="p">[</span><span class="n">ORGID</span><span class="p">]),</span><span class="w"> </span><span class="n">NOT</span><span class="p">(</span><span class="n">ISBLANK</span><span class="p">(</span><span class="err">&#39;</span><span class="n">LOS</span><span class="w"> </span><span class="n">Data</span><span class="err">&#39;</span><span class="p">[</span><span class="n">ORGID</span><span class="p">])))</span><span class="w"></span>
 </code></pre></div>
-<p>That is it, now you have a a column full of user names from the user table that can be used in visuals.</p>
-<p><img alt="multiple_users_fixed_data_lookup" src="../../assests/images/data_source_users/multiple_user_fixed_graph_lookup.png" /></p>
-<p>The nice thing about this lookup is that if for some reason a user is not found int he user table then it will just default back to what is in the LOS data. This can be helpful if your LOS data sync regularly but the user table isn't updated as frequently.</p>
-<h2 id="conclusion">Conclusion</h2>
-<p>Using a user table is a great way to make sure report is accurate and reliable for your end users. The relationship and lookup way of getting users are just a couple of ways I have used in the past to make sure my data is in a good state. There are many different ways that this could be accomplished but hopefully these two will help you in your data exploration.</p>
+<p>This would create a table called <em>ORGID ONLY</em> with all the unique (non-blank) ORGIDS from the LOS Data table:</p>
+<p><img alt="orgid_table" src="../../assests/images/rls/orgid_table.png" /></p>
+<p>To create the relationships between the tables, we drag the ORGID column from the ORGID Only table over top the ORGID column in the Managers table and then drag the ORGID column from the ORGID Only table over the ORGID column in the LOS Data table. This will result in a model that looks like the below with a set One-To-Many relationships going from the bridge table to the Managers and LOS Data tables:</p>
+<p><img alt="one_to_many_relationship" src="../../assests/images/rls/one_to_many_relationship.png" /></p>
+<p>To apply the RLS role to a relationship we need double click on the line that goes between the Managers table the ORGID Only table to get the <strong>Edit Relationship</strong> box to pop-up. We need to change the <strong><em>Cross filter direction</em></strong> dropdown to <strong>Both</strong> and check the <strong>Apply security filter in both directions</strong> check box:</p>
+<p><img alt="one_to_many_edit_relationship" src="../../assests/images/rls/one_to_many_edit_relationship.png" /></p>
+<p>With the RLS role and relationship with security check box checked setup, the filter applied from the Manager role will filter down from the Managers table to the ORGID Only table and then finally to the LOS Data table, making so that users only see the loan data for the cost centers they have been allowed to.</p>
+<h2 id="assigning-users-power-bi-web-service">Assigning users - Power BI Web Service</h2>
+<p>Once Row-Level Security has been configured using the Desktop application the report can be published to the Power BI Web Service and the security permissions setup on the dataset. To do this publish the report to a workspace then navigate to the dataset for that report. Hovering your mouse over the dataset will provide additional options to the right of the dataset name. Click on the three dots (...) will pop-up an options menu with the Security option:</p>
+<p><img alt="pbis_options" src="../../assests/images/rls/pbis_security.png" /></p>
+<p>Selecting the Security options will open the Row-Level Security page, users can be added to the Role via user email address or by a user group that the user belongs to.</p>
+<p><img alt="pbis_rls" src="../../assests/images/rls/pbis_rls.png" /></p>
+<p>Using our example from above if we were to add Mike, Mary, and Marge's emails to this Role, when they view this report in the Power BI Web Service they would only be able to see those cost centers that they have been assigned to through the Manager Table.</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="power-bi-desktop">Power BI Desktop</h3>
+<p>It can be handy to see what a user would see when the Role they are assigned to is in use. To do this in Power BI Desktop go to the Modeling Ribbon in your report that has RLS roles setup and click the <em>View as</em> option in the Security section:</p>
+<p><img alt="view_as" src="../../assests/images/rls/view_as.png" /></p>
+<p>This will open the View as roles page allowing you to select the role you are wanting to test along with checking the <em>Other user</em> option and typing the email or domain/username of the user you would like to test as:</p>
+<p><img alt="view_role_as" src="../../assests/images/rls/view_role_as.png" /></p>
+<h3 id="power-bi-web-service">Power BI Web Service</h3>
+<p>In the Power BI Web Service you can test what a user sees by going to Row-Level Security page (were we assign users to the role), and hover over the Role name on the left and click the three docs (...) that show up to the right of the Role name. This will give an option of <em>Test as role</em>. Click this will open the report tied to the dataset and give you an option at the top to change who you are viewing the report as by change the <em>Now view as:</em> dropdown and providing a email address:</p>
+<p><img alt="pbis_view_as" src="../../assests/images/rls/pbis_view_role_as.png" /></p>
+<h2 id="other-users">Other Users</h2>
+<p>The above walked through an example of using Row-Level Security through a relationship. If your data happens to contain the email that matches the user principal name in a column then you don't need to use a relationship and can assign the role directly to your data table. This can be handy if you want to give production or operation user access to a report but only want them to have access to the loans they have been assigned to. Keep in mind though that this will only work if the column in your data table that contains the email matches the user principal name when the user access the Power BI Web Service.</p>
 
               
             </article>
@@ -808,7 +972,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../field_list/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Fields List" rel="prev">
+        <a href="../../datasources/simple_report_export/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Simple Report Export" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -817,20 +981,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Fields List
+              Simple Report Export
             </div>
           </div>
         </a>
       
       
         
-        <a href="../simple_report_export/" class="md-footer__link md-footer__link--next" aria-label="Next: Simple Report Export" rel="next">
+        <a href="../../about/" class="md-footer__link md-footer__link--next" aria-label="Next: About" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Simple Report Export
+              About
             </div>
           </div>
           <div class="md-footer__button md-icon">
