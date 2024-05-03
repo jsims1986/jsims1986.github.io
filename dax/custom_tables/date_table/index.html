@@ -558,6 +558,117 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Measures
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Measures
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_1" id="__nav_2_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Custom Totals
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Custom Totals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../measures/table_matrix_totals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tables and Matrix
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1132,7 +1243,7 @@
 
 <h1 id="date-table">Date Table</h1>
 <h2 id="what-and-why">What and Why</h2>
-<p>A date table is a table that has continous dates for full years, example being 1/1/2017 to 12/31/2022. Althoguh your data may have dates in it, it is likely that those dates have gaps in them for weekends or holidays, an independent date table allows for DAX time intelligence functions to work properly and create accurate results.</p>
+<p>A date table is a table that has continuous dates for full years, example being 1/1/2017 to 12/31/2022. Although your data may have dates in it, it is likely that those dates have gaps in them for weekends or holidays, an independent date table allows for DAX time intelligence functions to work properly and create accurate results.</p>
 <h2 id="creating-a-date-table">Creating a Date Table</h2>
 <p>One of the easiest ways to create a date table, if you don't have one already built out, is to create a table inside of Power BI using DAX. To do this, in Power BI Desktop click on the Modeling Tab and select New table:</p>
 <p><img alt="new_table" src="../../../assests/images/date_table/new_table.png" /></p>
@@ -1167,11 +1278,11 @@
 <p><img alt="mark_as_date_table" src="../../../assests/images/date_table/mark_as_date_table.png" /></p>
 <p>This will pop up the Mark as date table prompt. From the Date column drop down select the Date column from the table an click OK:</p>
 <p><img alt="select_date_column" src="../../../assests/images/date_table/select_date_column.png" /></p>
-<p>That's it, you have not setup a date table and told Power BI to use for time intellegence measures for DAX.</p>
+<p>That's it, you have not setup a date table and told Power BI to use for time intelligence measures for DAX.</p>
 <h2 id="additional-custom-columns">Additional Custom Columns</h2>
 <p>It may be handy to expand your date table out to provide additional filtering or functionality, the below are some additional custom columns I have found useful to add to this table over the years, please feel free to add any as needed in your project.</p>
 <h3 id="how-to-create-a-custom-column">How to create a Custom Column</h3>
-<p>To create a custom column in a table first select the table you wish to add the custom column to. Next in the Modeling tab at the top of Powe BI select New column:</p>
+<p>To create a custom column in a table first select the table you wish to add the custom column to. Next in the Modeling tab at the top of Power BI select New column:</p>
 <p><img alt="custom_column" src="../../../assests/images/custom_column.png" /></p>
 <p>This will open up the column formula bar, in which you can type in your DAX to create a new custom column:</p>
 <p><img alt="custom_column_formula" src="../../../assests/images/custom_column_formula.png" /></p>
@@ -1182,7 +1293,7 @@
 <div class="highlight"><pre><span></span><code><span class="nx">After</span><span class="w"> </span><span class="nx">Today</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">IF</span><span class="p">(</span><span class="nx">Dates</span><span class="p">[</span><span class="nb">Date</span><span class="p">]</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nx">TODAY</span><span class="p">(),</span><span class="w"> </span><span class="nx">TRUE</span><span class="p">(),</span><span class="w"> </span><span class="nx">FALSE</span><span class="p">())</span>
 </code></pre></div>
 <h4 id="before-today">Before Today</h4>
-<p>Similar to the <a href="#after-today">After Today</a> this custom colum can be used when you want to filter a visual or slicer down to only show dates before today. A modification that can be made to this is instead of just the lesser then symbol (&lt;), you could replace it with the lesser than or equal to symbols (&lt;=) to include todays date in the column:</p>
+<p>Similar to the <a href="#after-today">After Today</a> this custom column can be used when you want to filter a visual or slicer down to only show dates before today. A modification that can be made to this is instead of just the lesser then symbol (&lt;), you could replace it with the lesser than or equal to symbols (&lt;=) to include todays date in the column:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Before</span><span class="w"> </span><span class="nx">Today</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">IF</span><span class="p">(</span><span class="nx">Dates</span><span class="p">[</span><span class="nb">Date</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">TODAY</span><span class="p">(),</span><span class="w"> </span><span class="nx">TRUE</span><span class="p">(),</span><span class="w"> </span><span class="nx">FALSE</span><span class="p">())</span>
 </code></pre></div>
 <h4 id="current-week">Current Week</h4>
