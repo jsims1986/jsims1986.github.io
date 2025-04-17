@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../assests/images/favicon.svg">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.2">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
@@ -26,7 +26,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -100,7 +100,7 @@
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -128,7 +128,7 @@
     <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
   
@@ -138,7 +138,7 @@
     <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
   
@@ -146,36 +146,38 @@
       
     
     
-      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -186,13 +188,14 @@
     </div>
   </div>
 </div>
+      
     
     
       <div class="md-header__source">
         <a href="https://bitbucket.org/jsimshighlands/workspace/projects/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M22.2 32A16 16 0 0 0 6 47.8a26.35 26.35 0 0 0 .2 2.8l67.9 412.1a21.77 21.77 0 0 0 21.3 18.2h325.7a16 16 0 0 0 16-13.4L505 50.7a16 16 0 0 0-13.2-18.3 24.58 24.58 0 0 0-2.8-.2L22.2 32zm285.9 297.8h-104l-28.1-147h157.3l-25.2 147z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M22.2 32A16 16 0 0 0 6 47.8a26 26 0 0 0 .2 2.8l67.9 412.1a21.77 21.77 0 0 0 21.3 18.2h325.7a16 16 0 0 0 16-13.4L505 50.7a16 16 0 0 0-13.2-18.3 25 25 0 0 0-2.8-.2zm285.9 297.8h-104l-28.1-147h157.3z"/></svg>
   </div>
   <div class="md-source__repository">
     Bitbucket
@@ -240,7 +243,7 @@
       <a href="https://bitbucket.org/jsimshighlands/workspace/projects/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M22.2 32A16 16 0 0 0 6 47.8a26.35 26.35 0 0 0 .2 2.8l67.9 412.1a21.77 21.77 0 0 0 21.3 18.2h325.7a16 16 0 0 0 16-13.4L505 50.7a16 16 0 0 0-13.2-18.3 24.58 24.58 0 0 0-2.8-.2L22.2 32zm285.9 297.8h-104l-28.1-147h157.3l-25.2 147z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M22.2 32A16 16 0 0 0 6 47.8a26 26 0 0 0 .2 2.8l67.9 412.1a21.77 21.77 0 0 0 21.3 18.2h325.7a16 16 0 0 0 16-13.4L505 50.7a16 16 0 0 0-13.2-18.3 25 25 0 0 0-2.8-.2zm285.9 297.8h-104l-28.1-147h157.3z"/></svg>
   </div>
   <div class="md-source__repository">
     Bitbucket
@@ -260,8 +263,10 @@
       <a href="../.." class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Home
+    
   </span>
   
 
@@ -285,15 +290,16 @@
       
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
     DAX
+    
   </span>
   
 
@@ -322,15 +328,16 @@
       
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
         
           
           <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
     Calculated Tables
+    
   </span>
   
 
@@ -354,8 +361,10 @@
       <a href="../../dax/custom_tables/date_table/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Dates Table
+    
   </span>
   
 
@@ -375,8 +384,10 @@
       <a href="../../dax/custom_tables/holiday_table/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Holiday Table
+    
   </span>
   
 
@@ -409,15 +420,16 @@
       
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
     Measures
+    
   </span>
   
 
@@ -446,15 +458,16 @@
       
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_1" >
         
           
           <label class="md-nav__link" for="__nav_2_2_1" id="__nav_2_2_1_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
     Custom Totals
+    
   </span>
   
 
@@ -478,8 +491,10 @@
       <a href="../../dax/measures/table_matrix_totals/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Tables and Matrix
+    
   </span>
   
 
@@ -527,15 +542,16 @@
       
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
     Reports
+    
   </span>
   
 
@@ -559,8 +575,10 @@
       <a href="../../report_templates/projection_report/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Projection Report
+    
   </span>
   
 
@@ -580,8 +598,10 @@
       <a href="../../report_templates/funding_report/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Funding Report
+    
   </span>
   
 
@@ -601,8 +621,10 @@
       <a href="../../report_templates/scorecard_report/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Scorecard Reports
+    
   </span>
   
 
@@ -622,8 +644,10 @@
       <a href="../../report_templates/pullthrough_report/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Pull-Through Report
+    
   </span>
   
 
@@ -643,8 +667,10 @@
       <a href="../../report_templates/pipeline_report/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Pipeline Report
+    
   </span>
   
 
@@ -664,8 +690,10 @@
       <a href="../../report_templates/current_pipeline_report/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Current Pipeline Report
+    
   </span>
   
 
@@ -685,8 +713,10 @@
       <a href="../../report_templates/disclosures_due_report/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Disclosures Due
+    
   </span>
   
 
@@ -706,8 +736,10 @@
       <a href="../../report_templates/forecast_report/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Forecast Report
+    
   </span>
   
 
@@ -739,15 +771,16 @@
       
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
     Data Sources
+    
   </span>
   
 
@@ -771,8 +804,10 @@
       <a href="../../datasources/field_list/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Fields List
+    
   </span>
   
 
@@ -792,8 +827,10 @@
       <a href="../../datasources/users/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Users
+    
   </span>
   
 
@@ -813,8 +850,10 @@
       <a href="../../datasources/simple_report_export/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Simple Report Export
+    
   </span>
   
 
@@ -848,15 +887,16 @@
       
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
     Modeling
+    
   </span>
   
 
@@ -889,8 +929,10 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
+  
   <span class="md-ellipsis">
     Row-Level Security
+    
   </span>
   
 
@@ -900,8 +942,10 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
+  
   <span class="md-ellipsis">
     Row-Level Security
+    
   </span>
   
 
@@ -1077,8 +1121,10 @@
       <a href="../../about/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     About
+    
   </span>
   
 
@@ -1257,7 +1303,8 @@
                   
 
 
-<h1 id="row-level-security">Row-Level Security</h1>
+
+<div><h1 id="row-level-security">Row-Level Security</h1>
 <h2 id="what-is-row-level-security-rls">What is Row-Level Security (RLS)</h2>
 <p>Row-Level Security (RLS) is a way to control access to data in a database at a row granularity. This allows users to only have access to the data that they should be authorized to see.</p>
 <p>For loan origination data, RLS helps us ensure that users only have access to the same loans they would have access to the loan origination system. An example of this is to provide managers with access to specific cost centers in reports so that they only can see loan information for their region, area, or branch only. In the example below we will walk through the steps of create a role for the manager to cost center scenario. Although we are only working through the one scenario, it could be expand on to make reports that are filtered down to originators or production team level.</p>
@@ -1278,9 +1325,9 @@
 <h2 id="setting-up-rls">Setting Up RLS</h2>
 <p>For the below examples we are going to reference the following tables:</p>
 <p><strong>LOS Data Table</strong></p>
-<p><img alt="los_data_table" src="../../assests/images/rls/los_data_table.png" /></p>
+<p><img alt="los_data_table" src="../../assests/images/rls/los_data_table.png"></p>
 <p><strong>Manager Table</strong></p>
-<p><img alt="manager_table" src="../../assests/images/rls/managers_table.png" /></p>
+<p><img alt="manager_table" src="../../assests/images/rls/managers_table.png"></p>
 <h3 id="identifying-users">Identifying Users</h3>
 <p>To enable us to know what data a user should have access to via RLS we need to identify the user that is accessing the report. Luckily Power BI's DAX has a built in function that helps us with this, the <em>USERPRINCIPALNAME()</em> function will return a users information in the <em>user@example.com</em> format. We can then use that to build a access list or apply it to a set of a data to restrict users based on their User Principal Name, you can see this in our Managers data in the EMAIL column.</p>
 <div class="admonition note">
@@ -1295,52 +1342,52 @@
 <p>When applying RLS we will need to setup a filter to ensure that the user only has access to data that they are suppose to. This means the data has to have some way to group or individual identify what data a user should see. Using the <em>USERPRINCIPALNAME()</em> we would need a email address that is tied to the user for each row they would be given access to. Keep in mind that the email must match what is returned by the <em>USERPRINCIPALNAME()</em> function. In the examples below we will be using cost center to create a group that users should have access to and then use Power BI's relationships to apply the security role. In the above data set we will be building relationships off the ORGID column.</p>
 <h3 id="setting-up-rls-role">Setting Up RLS Role</h3>
 <p>To setup a Role that will be used for RLS first click the Manage roles button on the Model ribbon. The Model ribbon can be found while in the Report View or on the Home ribbon while in the Data or Model view. The button looks like this:</p>
-<p><img alt="manage_roles_button" src="../../assests/images/rls/manage_roles_button.png" /></p>
+<p><img alt="manage_roles_button" src="../../assests/images/rls/manage_roles_button.png"></p>
 <p>Click the Mange roles button will open the Manage roles box:</p>
-<p><img alt="manage_roles" src="../../assests/images/rls/manage_roles.png" /></p>
+<p><img alt="manage_roles" src="../../assests/images/rls/manage_roles.png"></p>
 <p>From here the <strong><em>Create</em></strong>  button is used to create a role and then write a DAX expression that is applied to the table we want to apply RLS to. Below is a Role called Manager, that is applied to the Managers table with the a DAX statement that compares the EMAIL column in the Managers table to the <em>USERPRINCIPALNAME()</em> to know which roles should be accessible to the user..</p>
-<p><img alt="manage_roles_setup" src="../../assests/images/rls/manage_roles_setup.png" /></p>
+<p><img alt="manage_roles_setup" src="../../assests/images/rls/manage_roles_setup.png"></p>
 <p>Clicking the <strong><em>Save</em></strong> button will save the role. Now when a user that is assigned to this role uses the dataset, the Managers table will apply RLS and only give access to those rows where the User Principal Name equals the email found in the EMAIL column.</p>
 <p>We now need to apply the same RLS not only to the Managers table but have it also flow over to the LOS Data table. Next we look at two different way to accomplish this.</p>
 <h3 id="setting-up-many-to-many-relationship">Setting up Many-To-Many relationship</h3>
 <p>To create a Many-To-Many relationship go to the Model view in Power BI Desktop and drag the key column from one table to the table you wish to create the relationship with. In our example we will be creating a relationship on the ORGID columns. When we do this we will get a <strong><em>Create relationship</em></strong> pop-up confirming that we want to use the ORGID columns.</p>
-<p><img alt="many-to-many" src="../../assests/images/rls/many_to_many_relationship.png" /></p>
+<p><img alt="many-to-many" src="../../assests/images/rls/many_to_many_relationship.png"></p>
 <p>There are a couple of things to note on this popup:</p>
 <ol>
 <li>Warning about the Many-To-Many cardinality being used, make sure to take a peek at the <a href="https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-many-to-many-relationships">learn more</a> link provided and understand what this could mean for you environment. If Many-To-Many does not work check out the next example using a bridge table instead.</li>
 <li>Under the Cross filter direction, we want to make sure to check the <em>Apply security filter in both dicrection</em> checkbox so that the Role applied to the Managers table will filter to the LOS Data table through the relationship.</li>
 </ol>
 <p>Once you click <strong><em>OK</em></strong> the model view will be updated like below showing the relationship line between the two tables:</p>
-<p><img alt="many_to_many_relationship" src="../../assests/images/rls/many_to_many_model.png" /></p>
+<p><img alt="many_to_many_relationship" src="../../assests/images/rls/many_to_many_model.png"></p>
 <p>With this in place when a user accesses the dataset, the Manager role filters the Managers table down to the cost centers they have access to and that in turn (because of the Apply security filter checkbox) flows down to the LOS Data, making sure that the user only sees loan data for the cost centers they have been allowed to.</p>
 <h3 id="setting-up-rls-using-a-bridge-table">Setting up RLS using a Bridge table</h3>
 <p>An alternative to using a Many-To-Many relationship, is to build a bridge table that contains the unique values of your key fields and then connecting the tables through this new table. In our example we would create a bridge table that contains the ORGID only, using the following DAX statement:</p>
-<div class="highlight"><pre><span></span><code><span class="n">ORGID</span><span class="w"> </span><span class="n">Only</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CALCULATETABLE</span><span class="p">(</span><span class="n">DISTINCT</span><span class="p">(</span><span class="err">&#39;</span><span class="n">LOS</span><span class="w"> </span><span class="n">Data</span><span class="err">&#39;</span><span class="p">[</span><span class="n">ORGID</span><span class="p">]),</span><span class="w"> </span><span class="n">NOT</span><span class="p">(</span><span class="n">ISBLANK</span><span class="p">(</span><span class="err">&#39;</span><span class="n">LOS</span><span class="w"> </span><span class="n">Data</span><span class="err">&#39;</span><span class="p">[</span><span class="n">ORGID</span><span class="p">])))</span>
+<div class="highlight"><pre><span></span><code><span class="n">ORGID</span><span class="w"> </span><span class="n">Only</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CALCULATETABLE</span><span class="p">(</span><span class="n">DISTINCT</span><span class="p">(</span><span class="err">'</span><span class="n">LOS</span><span class="w"> </span><span class="n">Data</span><span class="err">'</span><span class="p">[</span><span class="n">ORGID</span><span class="p">]),</span><span class="w"> </span><span class="n">NOT</span><span class="p">(</span><span class="n">ISBLANK</span><span class="p">(</span><span class="err">'</span><span class="n">LOS</span><span class="w"> </span><span class="n">Data</span><span class="err">'</span><span class="p">[</span><span class="n">ORGID</span><span class="p">])))</span>
 </code></pre></div>
 <p>This would create a table called <em>ORGID ONLY</em> with all the unique (non-blank) ORGIDS from the LOS Data table:</p>
-<p><img alt="orgid_table" src="../../assests/images/rls/orgid_table.png" /></p>
+<p><img alt="orgid_table" src="../../assests/images/rls/orgid_table.png"></p>
 <p>To create the relationships between the tables, we drag the ORGID column from the ORGID Only table over top the ORGID column in the Managers table and then drag the ORGID column from the ORGID Only table over the ORGID column in the LOS Data table. This will result in a model that looks like the below with a set One-To-Many relationships going from the bridge table to the Managers and LOS Data tables:</p>
-<p><img alt="one_to_many_relationship" src="../../assests/images/rls/one_to_many_relationship.png" /></p>
+<p><img alt="one_to_many_relationship" src="../../assests/images/rls/one_to_many_relationship.png"></p>
 <p>To apply the RLS role to a relationship we need double click on the line that goes between the Managers table the ORGID Only table to get the <strong>Edit Relationship</strong> box to pop-up. We need to change the <strong><em>Cross filter direction</em></strong> dropdown to <strong>Both</strong> and check the <strong>Apply security filter in both directions</strong> check box:</p>
-<p><img alt="one_to_many_edit_relationship" src="../../assests/images/rls/one_to_many_edit_relationship.png" /></p>
+<p><img alt="one_to_many_edit_relationship" src="../../assests/images/rls/one_to_many_edit_relationship.png"></p>
 <p>With the RLS role and relationship with security check box checked setup, the filter applied from the Manager role will filter down from the Managers table to the ORGID Only table and then finally to the LOS Data table, making so that users only see the loan data for the cost centers they have been allowed to.</p>
 <h2 id="assigning-users-power-bi-web-service">Assigning users - Power BI Web Service</h2>
 <p>Once Row-Level Security has been configured using the Desktop application the report can be published to the Power BI Web Service and the security permissions setup on the dataset. To do this publish the report to a workspace then navigate to the dataset for that report. Hovering your mouse over the dataset will provide additional options to the right of the dataset name. Click on the three dots (...) will pop-up an options menu with the Security option:</p>
-<p><img alt="pbis_options" src="../../assests/images/rls/pbis_security.png" /></p>
+<p><img alt="pbis_options" src="../../assests/images/rls/pbis_security.png"></p>
 <p>Selecting the Security options will open the Row-Level Security page, users can be added to the Role via user email address or by a user group that the user belongs to.</p>
-<p><img alt="pbis_rls" src="../../assests/images/rls/pbis_rls.png" /></p>
+<p><img alt="pbis_rls" src="../../assests/images/rls/pbis_rls.png"></p>
 <p>Using our example from above if we were to add Mike, Mary, and Marge's emails to this Role, when they view this report in the Power BI Web Service they would only be able to see those cost centers that they have been assigned to through the Manager Table.</p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <h3 id="power-bi-desktop">Power BI Desktop</h3>
 <p>It can be handy to see what a user would see when the Role they are assigned to is in use. To do this in Power BI Desktop go to the Modeling Ribbon in your report that has RLS roles setup and click the <em>View as</em> option in the Security section:</p>
-<p><img alt="view_as" src="../../assests/images/rls/view_as.png" /></p>
+<p><img alt="view_as" src="../../assests/images/rls/view_as.png"></p>
 <p>This will open the View as roles page allowing you to select the role you are wanting to test along with checking the <em>Other user</em> option and typing the email or domain/username of the user you would like to test as:</p>
-<p><img alt="view_role_as" src="../../assests/images/rls/view_role_as.png" /></p>
+<p><img alt="view_role_as" src="../../assests/images/rls/view_role_as.png"></p>
 <h3 id="power-bi-web-service">Power BI Web Service</h3>
 <p>In the Power BI Web Service you can test what a user sees by going to Row-Level Security page (were we assign users to the role), and hover over the Role name on the left and click the three docs (...) that show up to the right of the Role name. This will give an option of <em>Test as role</em>. Click this will open the report tied to the dataset and give you an option at the top to change who you are viewing the report as by change the <em>Now view as:</em> dropdown and providing a email address:</p>
-<p><img alt="pbis_view_as" src="../../assests/images/rls/pbis_view_role_as.png" /></p>
+<p><img alt="pbis_view_as" src="../../assests/images/rls/pbis_view_role_as.png"></p>
 <h2 id="other-users">Other Users</h2>
-<p>The above walked through an example of using Row-Level Security through a relationship. If your data happens to contain the email that matches the user principal name in a column then you don't need to use a relationship and can assign the role directly to your data table. This can be handy if you want to give production or operation user access to a report but only want them to have access to the loans they have been assigned to. Keep in mind though that this will only work if the column in your data table that contains the email matches the user principal name when the user access the Power BI Web Service.</p>
+<p>The above walked through an example of using Row-Level Security through a relationship. If your data happens to contain the email that matches the user principal name in a column then you don't need to use a relationship and can assign the role directly to your data table. This can be handy if you want to give production or operation user access to a report but only want them to have access to the loans they have been assigned to. Keep in mind though that this will only work if the column in your data table that contains the email matches the user principal name when the user access the Power BI Web Service.</p></div>
 
 
 
@@ -1387,10 +1434,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

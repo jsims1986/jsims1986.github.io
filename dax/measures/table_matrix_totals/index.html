@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../../assests/images/favicon.svg">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.2">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
@@ -26,7 +26,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.50c56a3b.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2afb09e1.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -100,7 +100,7 @@
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -128,7 +128,7 @@
     <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
   
@@ -138,7 +138,7 @@
     <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
   
@@ -146,36 +146,38 @@
       
     
     
-      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -186,13 +188,14 @@
     </div>
   </div>
 </div>
+      
     
     
       <div class="md-header__source">
         <a href="https://bitbucket.org/jsimshighlands/workspace/projects/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M22.2 32A16 16 0 0 0 6 47.8a26.35 26.35 0 0 0 .2 2.8l67.9 412.1a21.77 21.77 0 0 0 21.3 18.2h325.7a16 16 0 0 0 16-13.4L505 50.7a16 16 0 0 0-13.2-18.3 24.58 24.58 0 0 0-2.8-.2L22.2 32zm285.9 297.8h-104l-28.1-147h157.3l-25.2 147z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M22.2 32A16 16 0 0 0 6 47.8a26 26 0 0 0 .2 2.8l67.9 412.1a21.77 21.77 0 0 0 21.3 18.2h325.7a16 16 0 0 0 16-13.4L505 50.7a16 16 0 0 0-13.2-18.3 25 25 0 0 0-2.8-.2zm285.9 297.8h-104l-28.1-147h157.3z"/></svg>
   </div>
   <div class="md-source__repository">
     Bitbucket
@@ -240,7 +243,7 @@
       <a href="https://bitbucket.org/jsimshighlands/workspace/projects/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M22.2 32A16 16 0 0 0 6 47.8a26.35 26.35 0 0 0 .2 2.8l67.9 412.1a21.77 21.77 0 0 0 21.3 18.2h325.7a16 16 0 0 0 16-13.4L505 50.7a16 16 0 0 0-13.2-18.3 24.58 24.58 0 0 0-2.8-.2L22.2 32zm285.9 297.8h-104l-28.1-147h157.3l-25.2 147z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M22.2 32A16 16 0 0 0 6 47.8a26 26 0 0 0 .2 2.8l67.9 412.1a21.77 21.77 0 0 0 21.3 18.2h325.7a16 16 0 0 0 16-13.4L505 50.7a16 16 0 0 0-13.2-18.3 25 25 0 0 0-2.8-.2zm285.9 297.8h-104l-28.1-147h157.3z"/></svg>
   </div>
   <div class="md-source__repository">
     Bitbucket
@@ -260,8 +263,10 @@
       <a href="../../.." class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Home
+    
   </span>
   
 
@@ -287,15 +292,16 @@
       
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
     DAX
+    
   </span>
   
 
@@ -324,15 +330,16 @@
       
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
         
           
           <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
     Calculated Tables
+    
   </span>
   
 
@@ -356,8 +363,10 @@
       <a href="../../custom_tables/date_table/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Dates Table
+    
   </span>
   
 
@@ -377,8 +386,10 @@
       <a href="../../custom_tables/holiday_table/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Holiday Table
+    
   </span>
   
 
@@ -413,15 +424,16 @@
       
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
     Measures
+    
   </span>
   
 
@@ -452,15 +464,16 @@
       
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_1" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2_1" id="__nav_2_2_1_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
     Custom Totals
+    
   </span>
   
 
@@ -493,8 +506,10 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
+  
   <span class="md-ellipsis">
     Tables and Matrix
+    
   </span>
   
 
@@ -504,8 +519,10 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
+  
   <span class="md-ellipsis">
     Tables and Matrix
+    
   </span>
   
 
@@ -600,15 +617,16 @@
       
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
     Reports
+    
   </span>
   
 
@@ -632,8 +650,10 @@
       <a href="../../../report_templates/projection_report/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Projection Report
+    
   </span>
   
 
@@ -653,8 +673,10 @@
       <a href="../../../report_templates/funding_report/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Funding Report
+    
   </span>
   
 
@@ -674,8 +696,10 @@
       <a href="../../../report_templates/scorecard_report/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Scorecard Reports
+    
   </span>
   
 
@@ -695,8 +719,10 @@
       <a href="../../../report_templates/pullthrough_report/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Pull-Through Report
+    
   </span>
   
 
@@ -716,8 +742,10 @@
       <a href="../../../report_templates/pipeline_report/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Pipeline Report
+    
   </span>
   
 
@@ -737,8 +765,10 @@
       <a href="../../../report_templates/current_pipeline_report/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Current Pipeline Report
+    
   </span>
   
 
@@ -758,8 +788,10 @@
       <a href="../../../report_templates/disclosures_due_report/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Disclosures Due
+    
   </span>
   
 
@@ -779,8 +811,10 @@
       <a href="../../../report_templates/forecast_report/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Forecast Report
+    
   </span>
   
 
@@ -812,15 +846,16 @@
       
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
     Data Sources
+    
   </span>
   
 
@@ -844,8 +879,10 @@
       <a href="../../../datasources/field_list/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Fields List
+    
   </span>
   
 
@@ -865,8 +902,10 @@
       <a href="../../../datasources/users/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Users
+    
   </span>
   
 
@@ -886,8 +925,10 @@
       <a href="../../../datasources/simple_report_export/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Simple Report Export
+    
   </span>
   
 
@@ -919,15 +960,16 @@
       
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
     Modeling
+    
   </span>
   
 
@@ -951,8 +993,10 @@
       <a href="../../../modeling/rls/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Row-Level Security
+    
   </span>
   
 
@@ -979,8 +1023,10 @@
       <a href="../../../about/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     About
+    
   </span>
   
 
@@ -1057,30 +1103,31 @@
                   
 
 
-<h1 id="customizing-table-and-matrix-totals">Customizing Table and Matrix Totals</h1>
+
+<div><h1 id="customizing-table-and-matrix-totals">Customizing Table and Matrix Totals</h1>
 <h2 id="what-and-why">What and Why</h2>
 <p>One of the great things we can do with Power BI is customize our visuals, this customization allows for us to tell a stroy with our data in ways that is easy for our report user to understand. One such customization is in our Table and Matrix visuals using a measure to create a custom value to appear in the total column(s). This gives us the ability to have total number for each row or column and then possible the total/percentage for appear for the total.</p>
 <h2 id="tables">Tables</h2>
 <p>A measure we can use to customize the values that appear on the rows and for the total could look something like this:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">HasOneValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>
 <span class="w">    </span><span class="nx">IF</span><span class="p">(</span><span class="nx">HASONEVALUE</span><span class="p">(</span><span class="nx">Data</span><span class="p">[</span><span class="nx">Loan</span><span class="w"> </span><span class="nx">Officer</span><span class="p">]),</span>
-<span class="w">        </span><span class="s2">&quot;ROW&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;TOTAL&quot;</span>
+<span class="w">        </span><span class="s2">"ROW"</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">"TOTAL"</span>
 <span class="w">    </span><span class="p">)</span>
 </code></pre></div>
 <p>With this measure we are checking if the value on the row have a value in the Loan Officer column in the Data table and if it does then the true side ("ROW" in this case) is returned else the false side ("TOTAL" in this case) is returned. To illustrate how these values are returned see the example table below:</p>
-<p><img alt="hasonevalue_example" src="../../../assests/images/measures/hasonevalue_example.png" /></p>
+<p><img alt="hasonevalue_example" src="../../../assests/images/measures/hasonevalue_example.png"></p>
 <p>A more real world example may look like the table below where we have the total units per loan officer but then we have changed the total row to not also the average.</p>
-<p><img alt="hasonevalue_with_values" src="../../../assests/images/measures/hasonevalue_with_values.png" /></p>
+<p><img alt="hasonevalue_with_values" src="../../../assests/images/measures/hasonevalue_with_values.png"></p>
 <p>The measure we use for this looks something like this:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Loan</span><span class="w"> </span><span class="nx">Officer</span><span class="w"> </span><span class="nx">Table</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">Total</span><span class="w"> </span><span class="nx">and</span><span class="w"> </span><span class="nx">Average</span><span class="w"> </span><span class="nx">Units</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>
-<span class="w">    </span><span class="nx">VAR</span><span class="w"> </span><span class="nx">_avgUnits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">AVERAGEX</span><span class="p">(</span><span class="nx">SUMMARIZECOLUMNS</span><span class="p">(</span><span class="nx">Data</span><span class="p">[</span><span class="nx">Loan</span><span class="w"> </span><span class="nx">Officer</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;Total Units&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="nx">Count</span><span class="w"> </span><span class="nx">Loans</span><span class="p">]),</span><span class="w"> </span><span class="p">[</span><span class="nx">Total</span><span class="w"> </span><span class="nx">Units</span><span class="p">])</span>
-<span class="w">    </span><span class="nx">VAR</span><span class="w"> </span><span class="nx">_fmtUnits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">FORMAT</span><span class="p">([</span><span class="nx">Count</span><span class="w"> </span><span class="nx">Loans</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;0&quot;</span><span class="p">)</span>
-<span class="w">    </span><span class="nx">VAR</span><span class="w"> </span><span class="nx">_fmtAvg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">FORMAT</span><span class="p">(</span><span class="nx">_avgUnits</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;##.0&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="nx">VAR</span><span class="w"> </span><span class="nx">_avgUnits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">AVERAGEX</span><span class="p">(</span><span class="nx">SUMMARIZECOLUMNS</span><span class="p">(</span><span class="nx">Data</span><span class="p">[</span><span class="nx">Loan</span><span class="w"> </span><span class="nx">Officer</span><span class="p">],</span><span class="w"> </span><span class="s2">"Total Units"</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="nx">Count</span><span class="w"> </span><span class="nx">Loans</span><span class="p">]),</span><span class="w"> </span><span class="p">[</span><span class="nx">Total</span><span class="w"> </span><span class="nx">Units</span><span class="p">])</span>
+<span class="w">    </span><span class="nx">VAR</span><span class="w"> </span><span class="nx">_fmtUnits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">FORMAT</span><span class="p">([</span><span class="nx">Count</span><span class="w"> </span><span class="nx">Loans</span><span class="p">],</span><span class="w"> </span><span class="s2">"0"</span><span class="p">)</span>
+<span class="w">    </span><span class="nx">VAR</span><span class="w"> </span><span class="nx">_fmtAvg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">FORMAT</span><span class="p">(</span><span class="nx">_avgUnits</span><span class="p">,</span><span class="w"> </span><span class="s2">"##.0"</span><span class="p">)</span>
 <span class="nx">RETURN</span>
 <span class="w">    </span><span class="nx">IF</span><span class="p">(</span><span class="nx">HASONEVALUE</span><span class="p">(</span><span class="nx">Data</span><span class="p">[</span><span class="nx">Loan</span><span class="w"> </span><span class="nx">Officer</span><span class="p">]),</span>
 <span class="w">        </span><span class="nx">_fmtUnits</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">_fmtUnits</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="s2">&quot; / &quot;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="nx">_fmtAvg</span>
+<span class="w">        </span><span class="nx">_fmtUnits</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="s2">" / "</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="nx">_fmtAvg</span>
 <span class="w">    </span><span class="p">)</span>
 </code></pre></div>
 <div class="admonition note">
@@ -1091,31 +1138,31 @@
 <p>Like with tables we can use a measure to customize the row/column, row total, and column total values. A measure like this allows us to modify each section of the matrix visual to a value we want to use in our data story:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">IsInScope</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>
 <span class="w">    </span><span class="nx">IF</span><span class="p">(</span><span class="nx">ISINSCOPE</span><span class="p">(</span><span class="nx">Data</span><span class="p">[</span><span class="nx">Current</span><span class="w"> </span><span class="nx">Milestone</span><span class="p">])</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">ISINSCOPE</span><span class="p">(</span><span class="nx">Data</span><span class="p">[</span><span class="nx">Loan</span><span class="w"> </span><span class="nx">Officer</span><span class="p">]),</span>
-<span class="w">        </span><span class="s2">&quot;BOTH&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">"BOTH"</span><span class="p">,</span>
 <span class="w">        </span><span class="nx">IF</span><span class="p">(</span><span class="nx">ISINSCOPE</span><span class="p">(</span><span class="nx">Data</span><span class="p">[</span><span class="nx">Current</span><span class="w"> </span><span class="nx">Milestone</span><span class="p">]),</span>
-<span class="w">            </span><span class="s2">&quot;ROWS&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">"ROWS"</span><span class="p">,</span>
 <span class="w">            </span><span class="nx">IF</span><span class="p">(</span><span class="nx">ISINSCOPE</span><span class="p">(</span><span class="nx">Data</span><span class="p">[</span><span class="nx">Loan</span><span class="w"> </span><span class="nx">Officer</span><span class="p">]),</span>
-<span class="w">                </span><span class="s2">&quot;COLUMNS&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="s2">&quot;OTHER&quot;</span>
+<span class="w">                </span><span class="s2">"COLUMNS"</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">"OTHER"</span>
 <span class="w">            </span><span class="p">)</span>
 <span class="w">        </span><span class="p">)</span>
 <span class="w">    </span><span class="p">)</span>
 </code></pre></div>
 <p>I like to break down the above measure into intersections, first we check to see if we are intersecting at Current Milestone and Loan Officer and we we are return true ("BOTH" in this case). Since the Total row/column is not derived from either of those columns from our Data table then they don't return true. Next we check if we are only in scope of the Current Milestone column from the Data table, if this is true we return "ROWS" in this case. Finally we check if we are in the scope of the Loan Officer column from the Data table, when this returns true in this example we return "COLUMNS". The Totals Total (or "OTHER" in this case) is the result of all previous IF statements being false. The resulting matrix would look something like this:</p>
-<p><img alt="isinscope_example" src="../../../assests/images/measures/isinscope_example.png" /></p>
+<p><img alt="isinscope_example" src="../../../assests/images/measures/isinscope_example.png"></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The order at which we stack these IF statements is important we are going from a more restrictive check to a least restrictive check. This does allow us some flexibility to target what values we want to change. If you only need to target the column totals and make the row values we can. Use the IsInScope measure above as a sort of test where values end up before moving to actual data helps out a lot.</p>
 </div>
 <p>Looking at a more real world example the below matrix shows the count of loans by currently milestone and Loan Officer. Each value where the Milestone and Loan Officer intersect we only return the total units. For the total for each Loan Officer column we return the total units along with the number of units that have Cleared To Close this month. For the total for each Current Milestone we have the total for each milestone along with the percentage  of loans in that milestone. For the total of totals I make it blank as I felts that made the most since for this combination of data.</p>
-<p><img alt="isinscope_with_values" src="../../../assests/images/measures/isinscope_with_values.png" /></p>
+<p><img alt="isinscope_with_values" src="../../../assests/images/measures/isinscope_with_values.png"></p>
 <p>The measure used for this is:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">Loan</span><span class="w"> </span><span class="nx">Officer</span><span class="o">/</span><span class="nx">Milestone</span><span class="w"> </span><span class="nx">Matrix</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>
-<span class="w">    </span><span class="nx">VAR</span><span class="w"> </span><span class="nx">_fmtUnits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">FORMAT</span><span class="p">([</span><span class="nx">Count</span><span class="w"> </span><span class="nx">Loans</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;0&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="nx">VAR</span><span class="w"> </span><span class="nx">_fmtUnits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">FORMAT</span><span class="p">([</span><span class="nx">Count</span><span class="w"> </span><span class="nx">Loans</span><span class="p">],</span><span class="w"> </span><span class="s2">"0"</span><span class="p">)</span>
 <span class="w">    </span><span class="nx">VAR</span><span class="w"> </span><span class="nx">_percentMS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">DIVIDE</span><span class="p">([</span><span class="nx">Count</span><span class="w"> </span><span class="nx">Loans</span><span class="p">],</span><span class="w"> </span><span class="nx">CALCULATE</span><span class="p">([</span><span class="nx">Count</span><span class="w"> </span><span class="nx">Loans</span><span class="p">],</span><span class="w"> </span><span class="nx">ALLSELECTED</span><span class="p">(</span><span class="nx">Data</span><span class="p">[</span><span class="nx">Current</span><span class="w"> </span><span class="nx">Milestone</span><span class="p">])))</span>
-<span class="w">    </span><span class="nx">VAR</span><span class="w"> </span><span class="nx">_ctcLoans</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">CALCULATE</span><span class="p">([</span><span class="nx">Count</span><span class="w"> </span><span class="nx">Loans</span><span class="p">],</span><span class="w"> </span><span class="nx">Data</span><span class="p">[</span><span class="nx">Current</span><span class="w"> </span><span class="nx">Milestone</span><span class="p">]</span><span class="w"> </span><span class="nx">IN</span><span class="w"> </span><span class="p">{</span><span class="s2">&quot;Clear To Close&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Docs Signed&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Funded&quot;</span><span class="p">})</span>
-<span class="w">    </span><span class="nx">VAR</span><span class="w"> </span><span class="nx">_fmtRowTotal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">_fmtUnits</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="s2">&quot; (&quot;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="nx">FORMAT</span><span class="p">(</span><span class="nx">_percentMS</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;##.00 %&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="s2">&quot;)&quot;</span>
-<span class="w">    </span><span class="nx">VAR</span><span class="w"> </span><span class="nx">_fmtColTotal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">_fmtUnits</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="s2">&quot; / &quot;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="nx">FORMAT</span><span class="p">(</span><span class="nx">_ctcLoans</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;0&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="nx">VAR</span><span class="w"> </span><span class="nx">_ctcLoans</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">CALCULATE</span><span class="p">([</span><span class="nx">Count</span><span class="w"> </span><span class="nx">Loans</span><span class="p">],</span><span class="w"> </span><span class="nx">Data</span><span class="p">[</span><span class="nx">Current</span><span class="w"> </span><span class="nx">Milestone</span><span class="p">]</span><span class="w"> </span><span class="nx">IN</span><span class="w"> </span><span class="p">{</span><span class="s2">"Clear To Close"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Docs Signed"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Funded"</span><span class="p">})</span>
+<span class="w">    </span><span class="nx">VAR</span><span class="w"> </span><span class="nx">_fmtRowTotal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">_fmtUnits</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="s2">" ("</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="nx">FORMAT</span><span class="p">(</span><span class="nx">_percentMS</span><span class="p">,</span><span class="w"> </span><span class="s2">"##.00 %"</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="s2">")"</span>
+<span class="w">    </span><span class="nx">VAR</span><span class="w"> </span><span class="nx">_fmtColTotal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">_fmtUnits</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="s2">" / "</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="nx">FORMAT</span><span class="p">(</span><span class="nx">_ctcLoans</span><span class="p">,</span><span class="w"> </span><span class="s2">"0"</span><span class="p">)</span>
 <span class="nx">RETURN</span>
 <span class="w">    </span><span class="nx">IF</span><span class="p">(</span><span class="nx">ISINSCOPE</span><span class="p">(</span><span class="nx">Data</span><span class="p">[</span><span class="nx">Current</span><span class="w"> </span><span class="nx">Milestone</span><span class="p">])</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">ISINSCOPE</span><span class="p">(</span><span class="nx">Data</span><span class="p">[</span><span class="nx">Loan</span><span class="w"> </span><span class="nx">Officer</span><span class="p">]),</span>
 <span class="w">        </span><span class="nx">_fmtUnits</span><span class="p">,</span>
@@ -1131,7 +1178,7 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Just like the table measure we do our formatting as part of this measure so that our values appear as we want them to instead of relying on Power BI picking it for us.</p>
-</div>
+</div></div>
 
 
 
@@ -1178,10 +1225,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>
